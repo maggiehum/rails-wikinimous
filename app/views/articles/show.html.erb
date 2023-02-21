@@ -2,3 +2,7 @@
 
 <p><%= @article.content %></p>
 <%= link_to 'Go back to all articles', articles_path %>
+<%= link_to 'Update this article', edit_article_path %>
+<%= link_to 'Delete',
+    article_path(@article),
+    data: {turbo_method: :delete, turbo_confirm: 'Are you sure you want to delete this article?'}  %>
