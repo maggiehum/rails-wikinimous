@@ -1,6 +1,8 @@
-<ul>
-  <% @articles.each do |article|%>
-  <li class="title"><%= link_to article.title, article_path(article), class: "text-decoration-none" %>
-  <p class="content"><%= article.content %></p>
-  <% end %>
-</ul>
+<div class="p-5 border d-flex justify-content-center">
+  <ul class="list-unstyled">
+    <% @articles.each do |article|%>
+    <li class="title"><%= link_to article.title, article_path(article), class: "text-decoration-none" %>
+    <li class="content pb-3"><%= article.content %></li>
+    <% end %>
+  </ul>
+</div>

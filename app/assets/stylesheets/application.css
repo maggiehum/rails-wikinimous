@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+ .title {
+  color: #337AB7;
+  font-size: 25px;
+  font-family: 'Roboto Slab', serif;
+ }
+
+ .title:hover {
+  text-decoration: underline;
+ }
+
+ .content {
+  font-size: 16px;
+ }
